@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : knewstuff
-Version  : 5.48.0
-Release  : 1
-URL      : https://download.kde.org/stable/frameworks/5.48/knewstuff-5.48.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.48/knewstuff-5.48.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.48/knewstuff-5.48.0.tar.xz.sig
+Version  : 5.49.0
+Release  : 2
+URL      : https://download.kde.org/stable/frameworks/5.49/knewstuff-5.49.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.49/knewstuff-5.49.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.49/knewstuff-5.49.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -21,18 +21,16 @@ BuildRequires : attica-dev
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
 BuildRequires : karchive-dev
-BuildRequires : kbookmarks-dev
 BuildRequires : kcodecs-dev
 BuildRequires : kcompletion-dev
-BuildRequires : ki18n-dev
 BuildRequires : kiconthemes-dev
-BuildRequires : kio-dev
+BuildRequires : kirigami2-dev
 BuildRequires : kitemviews-dev
 BuildRequires : kjobwidgets-dev
-BuildRequires : kservice-dev
 BuildRequires : ktextwidgets-dev
 BuildRequires : kwidgetsaddons-dev
 BuildRequires : kxmlgui-dev
+BuildRequires : qtbase-dev qtbase-extras mesa-dev
 BuildRequires : solid-dev
 BuildRequires : sonnet-dev
 
@@ -87,14 +85,14 @@ locales components for the knewstuff package.
 
 
 %prep
-%setup -q -n knewstuff-5.48.0
+%setup -q -n knewstuff-5.49.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532101590
+export SOURCE_DATE_EPOCH=1534114283
 mkdir clr-build
 pushd clr-build
 %cmake ..
@@ -102,7 +100,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1532101590
+export SOURCE_DATE_EPOCH=1534114283
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/doc/knewstuff
 cp COPYING.LIB %{buildroot}/usr/share/doc/knewstuff/COPYING.LIB
@@ -236,9 +234,9 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5NewStuff.so.5
-/usr/lib64/libKF5NewStuff.so.5.48.0
+/usr/lib64/libKF5NewStuff.so.5.49.0
 /usr/lib64/libKF5NewStuffCore.so.5
-/usr/lib64/libKF5NewStuffCore.so.5.48.0
+/usr/lib64/libKF5NewStuffCore.so.5.49.0
 /usr/lib64/qt5/qml/org/kde/newstuff/libnewstuffqmlplugin.so
 /usr/lib64/qt5/qml/org/kde/newstuff/qml/NewStuffItem.qml
 /usr/lib64/qt5/qml/org/kde/newstuff/qml/NewStuffList.qml

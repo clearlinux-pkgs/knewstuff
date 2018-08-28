@@ -6,7 +6,7 @@
 #
 Name     : knewstuff
 Version  : 5.49.0
-Release  : 2
+Release  : 3
 URL      : https://download.kde.org/stable/frameworks/5.49/knewstuff-5.49.0.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/5.49/knewstuff-5.49.0.tar.xz
 Source99 : https://download.kde.org/stable/frameworks/5.49/knewstuff-5.49.0.tar.xz.sig
@@ -21,12 +21,16 @@ BuildRequires : attica-dev
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
 BuildRequires : karchive-dev
+BuildRequires : kbookmarks-dev
 BuildRequires : kcodecs-dev
 BuildRequires : kcompletion-dev
+BuildRequires : ki18n-dev
 BuildRequires : kiconthemes-dev
+BuildRequires : kio-dev
 BuildRequires : kirigami2-dev
 BuildRequires : kitemviews-dev
 BuildRequires : kjobwidgets-dev
+BuildRequires : kservice-dev
 BuildRequires : ktextwidgets-dev
 BuildRequires : kwidgetsaddons-dev
 BuildRequires : kxmlgui-dev
@@ -92,7 +96,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1534114283
+export SOURCE_DATE_EPOCH=1535431311
 mkdir clr-build
 pushd clr-build
 %cmake ..
@@ -100,7 +104,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1534114283
+export SOURCE_DATE_EPOCH=1535431311
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/doc/knewstuff
 cp COPYING.LIB %{buildroot}/usr/share/doc/knewstuff/COPYING.LIB
@@ -163,6 +167,7 @@ popd
 /usr/share/kf5/kmoretools/presets-kmoretools/vokoscreen.png
 /usr/share/kf5/kmoretools/presets-kmoretools/xfce4-taskmanager.desktop
 /usr/share/kf5/knewstuff/pics/thumb_frame.png
+/usr/share/xdg/knewstuff.categories
 
 %files dev
 %defattr(-,root,root,-)

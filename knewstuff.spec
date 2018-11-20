@@ -6,7 +6,7 @@
 #
 Name     : knewstuff
 Version  : 5.52.0
-Release  : 6
+Release  : 7
 URL      : https://download.kde.org/stable/frameworks/5.52/knewstuff-5.52.0.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/5.52/knewstuff-5.52.0.tar.xz
 Source99 : https://download.kde.org/stable/frameworks/5.52/knewstuff-5.52.0.tar.xz.sig
@@ -17,23 +17,31 @@ Requires: knewstuff-data = %{version}-%{release}
 Requires: knewstuff-lib = %{version}-%{release}
 Requires: knewstuff-license = %{version}-%{release}
 Requires: knewstuff-locales = %{version}-%{release}
+BuildRequires : attica-dev
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
+BuildRequires : karchive-dev
+BuildRequires : kbookmarks-dev
+BuildRequires : kcodecs-dev
+BuildRequires : kcompletion-dev
+BuildRequires : ki18n-dev
+BuildRequires : kiconthemes-dev
+BuildRequires : kio-dev
 BuildRequires : kirigami2-dev
+BuildRequires : kitemviews-dev
+BuildRequires : kjobwidgets-dev
+BuildRequires : kservice-dev
+BuildRequires : ktextwidgets-dev
+BuildRequires : kwidgetsaddons-dev
+BuildRequires : kxmlgui-dev
 BuildRequires : qtbase-dev mesa-dev
+BuildRequires : solid-dev
+BuildRequires : sonnet-dev
 
 %description
 # KNewStuff
 Framework for downloading and sharing additional application data
 ## Introduction
-
-%package abi
-Summary: abi components for the knewstuff package.
-Group: Default
-
-%description abi
-abi components for the knewstuff package.
-
 
 %package data
 Summary: data components for the knewstuff package.
@@ -88,7 +96,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1541879072
+export SOURCE_DATE_EPOCH=1542743391
 mkdir -p clr-build
 pushd clr-build
 %cmake ..
@@ -96,7 +104,7 @@ make  %{?_smp_mflags} VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1541879072
+export SOURCE_DATE_EPOCH=1542743391
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/knewstuff
 cp COPYING.LIB %{buildroot}/usr/share/package-licenses/knewstuff/COPYING.LIB
@@ -107,11 +115,6 @@ popd
 
 %files
 %defattr(-,root,root,-)
-
-%files abi
-%defattr(-,root,root,-)
-/usr/share/abi/libKF5NewStuff.so.5.52.0.abi
-/usr/share/abi/libKF5NewStuffCore.so.5.52.0.abi
 
 %files data
 %defattr(-,root,root,-)

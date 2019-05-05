@@ -6,7 +6,7 @@
 #
 Name     : knewstuff
 Version  : 5.57.0
-Release  : 13
+Release  : 14
 URL      : https://download.kde.org/stable/frameworks/5.57/knewstuff-5.57.0.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/5.57/knewstuff-5.57.0.tar.xz
 Source99 : https://download.kde.org/stable/frameworks/5.57/knewstuff-5.57.0.tar.xz.sig
@@ -17,10 +17,26 @@ Requires: knewstuff-data = %{version}-%{release}
 Requires: knewstuff-lib = %{version}-%{release}
 Requires: knewstuff-license = %{version}-%{release}
 Requires: knewstuff-locales = %{version}-%{release}
+BuildRequires : attica-dev
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
+BuildRequires : karchive-dev
+BuildRequires : kbookmarks-dev
+BuildRequires : kcodecs-dev
+BuildRequires : kcompletion-dev
+BuildRequires : ki18n-dev
+BuildRequires : kiconthemes-dev
+BuildRequires : kio-dev
 BuildRequires : kirigami2-dev
+BuildRequires : kitemviews-dev
+BuildRequires : kjobwidgets-dev
+BuildRequires : kservice-dev
+BuildRequires : ktextwidgets-dev
+BuildRequires : kwidgetsaddons-dev
+BuildRequires : kxmlgui-dev
 BuildRequires : qtbase-dev mesa-dev
+BuildRequires : solid-dev
+BuildRequires : sonnet-dev
 
 %description
 # KNewStuff
@@ -81,15 +97,22 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1555199189
+export SOURCE_DATE_EPOCH=1557025019
 mkdir -p clr-build
 pushd clr-build
+export AR=gcc-ar
+export RANLIB=gcc-ranlib
+export NM=gcc-nm
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %cmake ..
 make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1555199189
+export SOURCE_DATE_EPOCH=1557025019
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/knewstuff
 cp COPYING.LIB %{buildroot}/usr/share/package-licenses/knewstuff/COPYING.LIB

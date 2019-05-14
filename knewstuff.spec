@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : knewstuff
-Version  : 5.57.0
-Release  : 14
-URL      : https://download.kde.org/stable/frameworks/5.57/knewstuff-5.57.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.57/knewstuff-5.57.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.57/knewstuff-5.57.0.tar.xz.sig
+Version  : 5.58.0
+Release  : 15
+URL      : https://download.kde.org/stable/frameworks/5.58/knewstuff-5.58.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.58/knewstuff-5.58.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.58/knewstuff-5.58.0.tar.xz.sig
 Summary  : Support for downloading application assets from the network
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -17,26 +17,10 @@ Requires: knewstuff-data = %{version}-%{release}
 Requires: knewstuff-lib = %{version}-%{release}
 Requires: knewstuff-license = %{version}-%{release}
 Requires: knewstuff-locales = %{version}-%{release}
-BuildRequires : attica-dev
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
-BuildRequires : karchive-dev
-BuildRequires : kbookmarks-dev
-BuildRequires : kcodecs-dev
-BuildRequires : kcompletion-dev
-BuildRequires : ki18n-dev
-BuildRequires : kiconthemes-dev
-BuildRequires : kio-dev
 BuildRequires : kirigami2-dev
-BuildRequires : kitemviews-dev
-BuildRequires : kjobwidgets-dev
-BuildRequires : kservice-dev
-BuildRequires : ktextwidgets-dev
-BuildRequires : kwidgetsaddons-dev
-BuildRequires : kxmlgui-dev
 BuildRequires : qtbase-dev mesa-dev
-BuildRequires : solid-dev
-BuildRequires : sonnet-dev
 
 %description
 # KNewStuff
@@ -57,6 +41,7 @@ Group: Development
 Requires: knewstuff-lib = %{version}-%{release}
 Requires: knewstuff-data = %{version}-%{release}
 Provides: knewstuff-devel = %{version}-%{release}
+Requires: knewstuff = %{version}-%{release}
 Requires: knewstuff = %{version}-%{release}
 
 %description dev
@@ -90,14 +75,14 @@ locales components for the knewstuff package.
 
 
 %prep
-%setup -q -n knewstuff-5.57.0
+%setup -q -n knewstuff-5.58.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1557025019
+export SOURCE_DATE_EPOCH=1557793996
 mkdir -p clr-build
 pushd clr-build
 export AR=gcc-ar
@@ -112,7 +97,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1557025019
+export SOURCE_DATE_EPOCH=1557793996
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/knewstuff
 cp COPYING.LIB %{buildroot}/usr/share/package-licenses/knewstuff/COPYING.LIB
@@ -174,7 +159,6 @@ popd
 /usr/share/kf5/kmoretools/presets-kmoretools/vokoscreen.desktop
 /usr/share/kf5/kmoretools/presets-kmoretools/vokoscreen.png
 /usr/share/kf5/kmoretools/presets-kmoretools/xfce4-taskmanager.desktop
-/usr/share/kf5/knewstuff/pics/thumb_frame.png
 /usr/share/xdg/knewstuff.categories
 
 %files dev
@@ -251,9 +235,9 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5NewStuff.so.5
-/usr/lib64/libKF5NewStuff.so.5.57.0
+/usr/lib64/libKF5NewStuff.so.5.58.0
 /usr/lib64/libKF5NewStuffCore.so.5
-/usr/lib64/libKF5NewStuffCore.so.5.57.0
+/usr/lib64/libKF5NewStuffCore.so.5.58.0
 /usr/lib64/qt5/qml/org/kde/newstuff/libnewstuffqmlplugin.so
 /usr/lib64/qt5/qml/org/kde/newstuff/qml/NewStuffItem.qml
 /usr/lib64/qt5/qml/org/kde/newstuff/qml/NewStuffList.qml

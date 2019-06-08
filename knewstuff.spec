@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : knewstuff
-Version  : 5.58.0
-Release  : 15
-URL      : https://download.kde.org/stable/frameworks/5.58/knewstuff-5.58.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.58/knewstuff-5.58.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.58/knewstuff-5.58.0.tar.xz.sig
+Version  : 5.59.0
+Release  : 16
+URL      : https://download.kde.org/stable/frameworks/5.59/knewstuff-5.59.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.59/knewstuff-5.59.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.59/knewstuff-5.59.0.tar.xz.sig
 Summary  : Support for downloading application assets from the network
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -75,14 +75,14 @@ locales components for the knewstuff package.
 
 
 %prep
-%setup -q -n knewstuff-5.58.0
+%setup -q -n knewstuff-5.59.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1557793996
+export SOURCE_DATE_EPOCH=1560034817
 mkdir -p clr-build
 pushd clr-build
 export AR=gcc-ar
@@ -97,7 +97,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1557793996
+export SOURCE_DATE_EPOCH=1560034817
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/knewstuff
 cp COPYING.LIB %{buildroot}/usr/share/package-licenses/knewstuff/COPYING.LIB
@@ -235,9 +235,9 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5NewStuff.so.5
-/usr/lib64/libKF5NewStuff.so.5.58.0
+/usr/lib64/libKF5NewStuff.so.5.59.0
 /usr/lib64/libKF5NewStuffCore.so.5
-/usr/lib64/libKF5NewStuffCore.so.5.58.0
+/usr/lib64/libKF5NewStuffCore.so.5.59.0
 /usr/lib64/qt5/qml/org/kde/newstuff/libnewstuffqmlplugin.so
 /usr/lib64/qt5/qml/org/kde/newstuff/qml/NewStuffItem.qml
 /usr/lib64/qt5/qml/org/kde/newstuff/qml/NewStuffList.qml

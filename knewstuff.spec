@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : knewstuff
-Version  : 5.87.0
-Release  : 39
-URL      : https://download.kde.org/stable/frameworks/5.87/knewstuff-5.87.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.87/knewstuff-5.87.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.87/knewstuff-5.87.0.tar.xz.sig
+Version  : 5.88.0
+Release  : 40
+URL      : https://download.kde.org/stable/frameworks/5.88/knewstuff-5.88.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.88/knewstuff-5.88.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.88/knewstuff-5.88.0.tar.xz.sig
 Summary  : Support for downloading application assets from the network
 Group    : Development/Tools
 License  : BSD-2-Clause CC0-1.0 GPL-2.0 GPL-3.0 LGPL-2.0 LGPL-2.1 LGPL-3.0
@@ -103,15 +103,15 @@ locales components for the knewstuff package.
 
 
 %prep
-%setup -q -n knewstuff-5.87.0
-cd %{_builddir}/knewstuff-5.87.0
+%setup -q -n knewstuff-5.88.0
+cd %{_builddir}/knewstuff-5.88.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1634501730
+export SOURCE_DATE_EPOCH=1637010560
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -127,22 +127,23 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1634501730
+export SOURCE_DATE_EPOCH=1637010560
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/knewstuff
-cp %{_builddir}/knewstuff-5.87.0/LICENSES/BSD-2-Clause.txt %{buildroot}/usr/share/package-licenses/knewstuff/ea97eb88ae53ec41e26f8542176ab986d7bc943a
-cp %{_builddir}/knewstuff-5.87.0/LICENSES/CC0-1.0.txt %{buildroot}/usr/share/package-licenses/knewstuff/82da472f6d00dc5f0a651f33ebb320aa9c7b08d0
-cp %{_builddir}/knewstuff-5.87.0/LICENSES/GPL-2.0-only.txt %{buildroot}/usr/share/package-licenses/knewstuff/2a638514c87c4923c0570c55822620fad56f2a33
-cp %{_builddir}/knewstuff-5.87.0/LICENSES/GPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/knewstuff/6091db0aead0d90182b93d3c0d09ba93d188f907
-cp %{_builddir}/knewstuff-5.87.0/LICENSES/LGPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/knewstuff/20079e8f79713dce80ab09774505773c926afa2a
-cp %{_builddir}/knewstuff-5.87.0/LICENSES/LGPL-2.1-only.txt %{buildroot}/usr/share/package-licenses/knewstuff/3c3d7573e137d48253731c975ecf90d74cfa9efe
-cp %{_builddir}/knewstuff-5.87.0/LICENSES/LGPL-2.1-or-later.txt %{buildroot}/usr/share/package-licenses/knewstuff/6f1f675aa5f6a2bbaa573b8343044b166be28399
-cp %{_builddir}/knewstuff-5.87.0/LICENSES/LGPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/knewstuff/757b86330df80f81143d5916b3e92b4bcb1b1890
-cp %{_builddir}/knewstuff-5.87.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/knewstuff/7d9831e05094ce723947d729c2a46a09d6e90275
-cp %{_builddir}/knewstuff-5.87.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/knewstuff/7d9831e05094ce723947d729c2a46a09d6e90275
-cp %{_builddir}/knewstuff-5.87.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/knewstuff/e458941548e0864907e654fa2e192844ae90fc32
-cp %{_builddir}/knewstuff-5.87.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/knewstuff/e458941548e0864907e654fa2e192844ae90fc32
-cp %{_builddir}/knewstuff-5.87.0/src/qtquick/qmldir.license %{buildroot}/usr/share/package-licenses/knewstuff/7ff5a7dd2c915b2b34329c892e06917c5f82f3a4
+cp %{_builddir}/knewstuff-5.88.0/LICENSES/BSD-2-Clause.txt %{buildroot}/usr/share/package-licenses/knewstuff/ea97eb88ae53ec41e26f8542176ab986d7bc943a
+cp %{_builddir}/knewstuff-5.88.0/LICENSES/CC0-1.0.txt %{buildroot}/usr/share/package-licenses/knewstuff/82da472f6d00dc5f0a651f33ebb320aa9c7b08d0
+cp %{_builddir}/knewstuff-5.88.0/LICENSES/GPL-2.0-only.txt %{buildroot}/usr/share/package-licenses/knewstuff/2a638514c87c4923c0570c55822620fad56f2a33
+cp %{_builddir}/knewstuff-5.88.0/LICENSES/GPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/knewstuff/6091db0aead0d90182b93d3c0d09ba93d188f907
+cp %{_builddir}/knewstuff-5.88.0/LICENSES/LGPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/knewstuff/20079e8f79713dce80ab09774505773c926afa2a
+cp %{_builddir}/knewstuff-5.88.0/LICENSES/LGPL-2.1-only.txt %{buildroot}/usr/share/package-licenses/knewstuff/3c3d7573e137d48253731c975ecf90d74cfa9efe
+cp %{_builddir}/knewstuff-5.88.0/LICENSES/LGPL-2.1-or-later.txt %{buildroot}/usr/share/package-licenses/knewstuff/6f1f675aa5f6a2bbaa573b8343044b166be28399
+cp %{_builddir}/knewstuff-5.88.0/LICENSES/LGPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/knewstuff/757b86330df80f81143d5916b3e92b4bcb1b1890
+cp %{_builddir}/knewstuff-5.88.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/knewstuff/7d9831e05094ce723947d729c2a46a09d6e90275
+cp %{_builddir}/knewstuff-5.88.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/knewstuff/7d9831e05094ce723947d729c2a46a09d6e90275
+cp %{_builddir}/knewstuff-5.88.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/knewstuff/e458941548e0864907e654fa2e192844ae90fc32
+cp %{_builddir}/knewstuff-5.88.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/knewstuff/e458941548e0864907e654fa2e192844ae90fc32
+cp %{_builddir}/knewstuff-5.88.0/src/qtquick/qmldir.license %{buildroot}/usr/share/package-licenses/knewstuff/7ff5a7dd2c915b2b34329c892e06917c5f82f3a4
+cp %{_builddir}/knewstuff-5.88.0/tests/README.tests.license %{buildroot}/usr/share/package-licenses/knewstuff/cf81cd36721334c927a5c0efd351d9b610632518
 pushd clr-build
 %make_install
 popd
@@ -290,9 +291,9 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5NewStuff.so.5
-/usr/lib64/libKF5NewStuff.so.5.87.0
+/usr/lib64/libKF5NewStuff.so.5.88.0
 /usr/lib64/libKF5NewStuffCore.so.5
-/usr/lib64/libKF5NewStuffCore.so.5.87.0
+/usr/lib64/libKF5NewStuffCore.so.5.88.0
 /usr/lib64/qt5/qml/org/kde/newstuff/libnewstuffqmlplugin.so
 /usr/lib64/qt5/qml/org/kde/newstuff/qml/Action.qml
 /usr/lib64/qt5/qml/org/kde/newstuff/qml/Button.qml
@@ -331,6 +332,7 @@ popd
 /usr/share/package-licenses/knewstuff/7d9831e05094ce723947d729c2a46a09d6e90275
 /usr/share/package-licenses/knewstuff/7ff5a7dd2c915b2b34329c892e06917c5f82f3a4
 /usr/share/package-licenses/knewstuff/82da472f6d00dc5f0a651f33ebb320aa9c7b08d0
+/usr/share/package-licenses/knewstuff/cf81cd36721334c927a5c0efd351d9b610632518
 /usr/share/package-licenses/knewstuff/e458941548e0864907e654fa2e192844ae90fc32
 /usr/share/package-licenses/knewstuff/ea97eb88ae53ec41e26f8542176ab986d7bc943a
 

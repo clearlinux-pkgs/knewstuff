@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : knewstuff
-Version  : 5.94.0
-Release  : 46
-URL      : https://download.kde.org/stable/frameworks/5.94/knewstuff-5.94.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.94/knewstuff-5.94.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.94/knewstuff-5.94.0.tar.xz.sig
+Version  : 5.95.0
+Release  : 47
+URL      : https://download.kde.org/stable/frameworks/5.95/knewstuff-5.95.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.95/knewstuff-5.95.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.95/knewstuff-5.95.0.tar.xz.sig
 Summary  : Support for downloading application assets from the network
 Group    : Development/Tools
 License  : BSD-2-Clause CC0-1.0 GPL-2.0 GPL-3.0 LGPL-2.0 LGPL-2.1 LGPL-3.0
@@ -36,6 +36,7 @@ BuildRequires : kservice-dev
 BuildRequires : ktextwidgets-dev
 BuildRequires : kwidgetsaddons-dev
 BuildRequires : kxmlgui-dev
+BuildRequires : qt6base-dev
 BuildRequires : syndication-dev
 
 %description
@@ -101,15 +102,15 @@ locales components for the knewstuff package.
 
 
 %prep
-%setup -q -n knewstuff-5.94.0
-cd %{_builddir}/knewstuff-5.94.0
+%setup -q -n knewstuff-5.95.0
+cd %{_builddir}/knewstuff-5.95.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1652670307
+export SOURCE_DATE_EPOCH=1655150800
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -125,22 +126,22 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1652670307
+export SOURCE_DATE_EPOCH=1655150800
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/knewstuff
-cp %{_builddir}/knewstuff-5.94.0/LICENSES/BSD-2-Clause.txt %{buildroot}/usr/share/package-licenses/knewstuff/ea97eb88ae53ec41e26f8542176ab986d7bc943a
-cp %{_builddir}/knewstuff-5.94.0/LICENSES/CC0-1.0.txt %{buildroot}/usr/share/package-licenses/knewstuff/82da472f6d00dc5f0a651f33ebb320aa9c7b08d0
-cp %{_builddir}/knewstuff-5.94.0/LICENSES/GPL-2.0-only.txt %{buildroot}/usr/share/package-licenses/knewstuff/2a638514c87c4923c0570c55822620fad56f2a33
-cp %{_builddir}/knewstuff-5.94.0/LICENSES/GPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/knewstuff/6091db0aead0d90182b93d3c0d09ba93d188f907
-cp %{_builddir}/knewstuff-5.94.0/LICENSES/LGPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/knewstuff/20079e8f79713dce80ab09774505773c926afa2a
-cp %{_builddir}/knewstuff-5.94.0/LICENSES/LGPL-2.1-only.txt %{buildroot}/usr/share/package-licenses/knewstuff/3c3d7573e137d48253731c975ecf90d74cfa9efe
-cp %{_builddir}/knewstuff-5.94.0/LICENSES/LGPL-2.1-or-later.txt %{buildroot}/usr/share/package-licenses/knewstuff/6f1f675aa5f6a2bbaa573b8343044b166be28399
-cp %{_builddir}/knewstuff-5.94.0/LICENSES/LGPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/knewstuff/757b86330df80f81143d5916b3e92b4bcb1b1890
-cp %{_builddir}/knewstuff-5.94.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/knewstuff/7d9831e05094ce723947d729c2a46a09d6e90275
-cp %{_builddir}/knewstuff-5.94.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/knewstuff/7d9831e05094ce723947d729c2a46a09d6e90275
-cp %{_builddir}/knewstuff-5.94.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/knewstuff/e458941548e0864907e654fa2e192844ae90fc32
-cp %{_builddir}/knewstuff-5.94.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/knewstuff/e458941548e0864907e654fa2e192844ae90fc32
-cp %{_builddir}/knewstuff-5.94.0/tests/README.tests.license %{buildroot}/usr/share/package-licenses/knewstuff/cf81cd36721334c927a5c0efd351d9b610632518
+cp %{_builddir}/knewstuff-5.95.0/LICENSES/BSD-2-Clause.txt %{buildroot}/usr/share/package-licenses/knewstuff/ea97eb88ae53ec41e26f8542176ab986d7bc943a
+cp %{_builddir}/knewstuff-5.95.0/LICENSES/CC0-1.0.txt %{buildroot}/usr/share/package-licenses/knewstuff/82da472f6d00dc5f0a651f33ebb320aa9c7b08d0
+cp %{_builddir}/knewstuff-5.95.0/LICENSES/GPL-2.0-only.txt %{buildroot}/usr/share/package-licenses/knewstuff/2a638514c87c4923c0570c55822620fad56f2a33
+cp %{_builddir}/knewstuff-5.95.0/LICENSES/GPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/knewstuff/6091db0aead0d90182b93d3c0d09ba93d188f907
+cp %{_builddir}/knewstuff-5.95.0/LICENSES/LGPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/knewstuff/20079e8f79713dce80ab09774505773c926afa2a
+cp %{_builddir}/knewstuff-5.95.0/LICENSES/LGPL-2.1-only.txt %{buildroot}/usr/share/package-licenses/knewstuff/3c3d7573e137d48253731c975ecf90d74cfa9efe
+cp %{_builddir}/knewstuff-5.95.0/LICENSES/LGPL-2.1-or-later.txt %{buildroot}/usr/share/package-licenses/knewstuff/6f1f675aa5f6a2bbaa573b8343044b166be28399
+cp %{_builddir}/knewstuff-5.95.0/LICENSES/LGPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/knewstuff/757b86330df80f81143d5916b3e92b4bcb1b1890
+cp %{_builddir}/knewstuff-5.95.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/knewstuff/7d9831e05094ce723947d729c2a46a09d6e90275
+cp %{_builddir}/knewstuff-5.95.0/LICENSES/LicenseRef-KDE-Accepted-GPL.txt %{buildroot}/usr/share/package-licenses/knewstuff/7d9831e05094ce723947d729c2a46a09d6e90275
+cp %{_builddir}/knewstuff-5.95.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/knewstuff/e458941548e0864907e654fa2e192844ae90fc32
+cp %{_builddir}/knewstuff-5.95.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/knewstuff/e458941548e0864907e654fa2e192844ae90fc32
+cp %{_builddir}/knewstuff-5.95.0/tests/README.tests.license %{buildroot}/usr/share/package-licenses/knewstuff/cf81cd36721334c927a5c0efd351d9b610632518
 pushd clr-build
 %make_install
 popd
@@ -210,6 +211,12 @@ popd
 
 %files dev
 %defattr(-,root,root,-)
+/usr/include/KF5/KMoreTools/KMoreTools
+/usr/include/KF5/KMoreTools/KMoreToolsMenuFactory
+/usr/include/KF5/KMoreTools/KMoreToolsPresets
+/usr/include/KF5/KMoreTools/kmoretools.h
+/usr/include/KF5/KMoreTools/kmoretoolsmenufactory.h
+/usr/include/KF5/KMoreTools/kmoretoolspresets.h
 /usr/include/KF5/KNewStuff3/KNS3/Button
 /usr/include/KF5/KNewStuff3/KNS3/DownloadDialog
 /usr/include/KF5/KNewStuff3/KNS3/DownloadManager
@@ -220,6 +227,18 @@ popd
 /usr/include/KF5/KNewStuff3/KNS3/KMoreToolsPresets
 /usr/include/KF5/KNewStuff3/KNS3/QtQuickDialogWrapper
 /usr/include/KF5/KNewStuff3/KNS3/UploadDialog
+/usr/include/KF5/KNewStuff3/KNS3/button.h
+/usr/include/KF5/KNewStuff3/KNS3/downloaddialog.h
+/usr/include/KF5/KNewStuff3/KNS3/downloadmanager.h
+/usr/include/KF5/KNewStuff3/KNS3/downloadwidget.h
+/usr/include/KF5/KNewStuff3/KNS3/entry.h
+/usr/include/KF5/KNewStuff3/KNS3/kmoretools.h
+/usr/include/KF5/KNewStuff3/KNS3/kmoretoolsmenufactory.h
+/usr/include/KF5/KNewStuff3/KNS3/kmoretoolspresets.h
+/usr/include/KF5/KNewStuff3/KNS3/knewstuff_export.h
+/usr/include/KF5/KNewStuff3/KNS3/knewstuffaction.h
+/usr/include/KF5/KNewStuff3/KNS3/qtquickdialogwrapper.h
+/usr/include/KF5/KNewStuff3/KNS3/uploaddialog.h
 /usr/include/KF5/KNewStuff3/KNSCore/Author
 /usr/include/KF5/KNewStuff3/KNSCore/Cache
 /usr/include/KF5/KNewStuff3/KNSCore/DownloadManager
@@ -237,8 +256,32 @@ popd
 /usr/include/KF5/KNewStuff3/KNSCore/Security
 /usr/include/KF5/KNewStuff3/KNSCore/TagsFilterChecker
 /usr/include/KF5/KNewStuff3/KNSCore/XmlLoader
+/usr/include/KF5/KNewStuff3/KNSCore/author.h
+/usr/include/KF5/KNewStuff3/KNSCore/cache.h
+/usr/include/KF5/KNewStuff3/KNSCore/downloadmanager.h
+/usr/include/KF5/KNewStuff3/KNSCore/engine.h
+/usr/include/KF5/KNewStuff3/KNSCore/entryinternal.h
+/usr/include/KF5/KNewStuff3/KNSCore/entrywrapper.h
+/usr/include/KF5/KNewStuff3/KNSCore/errorcode.h
+/usr/include/KF5/KNewStuff3/KNSCore/installation.h
+/usr/include/KF5/KNewStuff3/KNSCore/itemsmodel.h
+/usr/include/KF5/KNewStuff3/KNSCore/knewstuffcore_export.h
+/usr/include/KF5/KNewStuff3/KNSCore/provider.h
+/usr/include/KF5/KNewStuff3/KNSCore/providersmodel.h
+/usr/include/KF5/KNewStuff3/KNSCore/question.h
+/usr/include/KF5/KNewStuff3/KNSCore/questionlistener.h
+/usr/include/KF5/KNewStuff3/KNSCore/questionmanager.h
+/usr/include/KF5/KNewStuff3/KNSCore/security.h
+/usr/include/KF5/KNewStuff3/KNSCore/tagsfilterchecker.h
+/usr/include/KF5/KNewStuff3/KNSCore/xmlloader.h
 /usr/include/KF5/KNewStuff3/KNSWidgets/Action
 /usr/include/KF5/KNewStuff3/KNSWidgets/Button
+/usr/include/KF5/KNewStuff3/KNSWidgets/action.h
+/usr/include/KF5/KNewStuff3/KNSWidgets/button.h
+/usr/include/KF5/KNewStuff3/KNSWidgets/knewstuffwidgets_export.h
+/usr/include/KF5/KNewStuff3/knewstuff_version.h
+/usr/include/KF5/KNewStuff3/knewstuffcore_version.h
+/usr/include/KF5/KNewStuff3/knewstuffquick_version.h
 /usr/include/KF5/KNewStuff3/kns3/button.h
 /usr/include/KF5/KNewStuff3/kns3/downloaddialog.h
 /usr/include/KF5/KNewStuff3/kns3/downloadmanager.h
@@ -272,9 +315,6 @@ popd
 /usr/include/KF5/KNewStuff3/knswidgets/action.h
 /usr/include/KF5/KNewStuff3/knswidgets/button.h
 /usr/include/KF5/KNewStuff3/knswidgets/knewstuffwidgets_export.h
-/usr/include/KF5/knewstuff_version.h
-/usr/include/KF5/knewstuffcore_version.h
-/usr/include/KF5/knewstuffquick_version.h
 /usr/lib64/cmake/KF5NewStuff/KF5NewStuffConfig.cmake
 /usr/lib64/cmake/KF5NewStuff/KF5NewStuffConfigVersion.cmake
 /usr/lib64/cmake/KF5NewStuff/KF5NewStuffTargets-relwithdebinfo.cmake
@@ -294,11 +334,11 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5NewStuff.so.5
-/usr/lib64/libKF5NewStuff.so.5.94.0
+/usr/lib64/libKF5NewStuff.so.5.95.0
 /usr/lib64/libKF5NewStuffCore.so.5
-/usr/lib64/libKF5NewStuffCore.so.5.94.0
+/usr/lib64/libKF5NewStuffCore.so.5.95.0
 /usr/lib64/libKF5NewStuffWidgets.so.5
-/usr/lib64/libKF5NewStuffWidgets.so.5.94.0
+/usr/lib64/libKF5NewStuffWidgets.so.5.95.0
 /usr/lib64/qt5/qml/org/kde/newstuff/Action.qml
 /usr/lib64/qt5/qml/org/kde/newstuff/Button.qml
 /usr/lib64/qt5/qml/org/kde/newstuff/Dialog.qml

@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : knewstuff
-Version  : 5.98.0
-Release  : 50
-URL      : https://download.kde.org/stable/frameworks/5.98/knewstuff-5.98.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.98/knewstuff-5.98.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.98/knewstuff-5.98.0.tar.xz.sig
+Version  : 5.99.0
+Release  : 51
+URL      : https://download.kde.org/stable/frameworks/5.99/knewstuff-5.99.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.99/knewstuff-5.99.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.99/knewstuff-5.99.0.tar.xz.sig
 Summary  : Support for downloading application assets from the network
 Group    : Development/Tools
 License  : BSD-2-Clause CC0-1.0 GPL-2.0 GPL-3.0 LGPL-2.0 LGPL-2.1 LGPL-3.0
@@ -36,7 +36,6 @@ BuildRequires : kservice-dev
 BuildRequires : ktextwidgets-dev
 BuildRequires : kwidgetsaddons-dev
 BuildRequires : kxmlgui-dev
-BuildRequires : qt6base-dev
 BuildRequires : syndication-dev
 
 %description
@@ -102,15 +101,15 @@ locales components for the knewstuff package.
 
 
 %prep
-%setup -q -n knewstuff-5.98.0
-cd %{_builddir}/knewstuff-5.98.0
+%setup -q -n knewstuff-5.99.0
+cd %{_builddir}/knewstuff-5.99.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1663011635
+export SOURCE_DATE_EPOCH=1665439457
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -126,7 +125,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1663011635
+export SOURCE_DATE_EPOCH=1665439457
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/knewstuff
 cp %{_builddir}/knewstuff-%{version}/LICENSES/BSD-2-Clause.txt %{buildroot}/usr/share/package-licenses/knewstuff/ea97eb88ae53ec41e26f8542176ab986d7bc943a || :
@@ -334,11 +333,11 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5NewStuff.so.5
-/usr/lib64/libKF5NewStuff.so.5.98.0
+/usr/lib64/libKF5NewStuff.so.5.99.0
 /usr/lib64/libKF5NewStuffCore.so.5
-/usr/lib64/libKF5NewStuffCore.so.5.98.0
+/usr/lib64/libKF5NewStuffCore.so.5.99.0
 /usr/lib64/libKF5NewStuffWidgets.so.5
-/usr/lib64/libKF5NewStuffWidgets.so.5.98.0
+/usr/lib64/libKF5NewStuffWidgets.so.5.99.0
 /usr/lib64/qt5/qml/org/kde/newstuff/Action.qml
 /usr/lib64/qt5/qml/org/kde/newstuff/Button.qml
 /usr/lib64/qt5/qml/org/kde/newstuff/Dialog.qml

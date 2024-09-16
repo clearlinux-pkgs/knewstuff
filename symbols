@@ -1,408 +1,91 @@
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::addProvider(QSharedPointer<KNSCore::Provider>)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::qt_metacall(QMetaObject::Call, int, void**)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::qt_metacast(char const*)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::userCanVote(KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::addTagFilter(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::setTagFilter(QList<QString> const&)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::updateStatus()
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::loadProviders()
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::searchPresets()
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::signalMessage(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::loadingProvider()
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::signalErrorCode(KNSCore::ErrorCode::ErrorCode, QString const&, QVariant const&)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::useLabelChanged()
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::providersChanged()
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::userCanBecomeFan(KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::categoriesMetadata()
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::providerInitialized(KNSCore::Provider*)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::slotProvidersFailed()
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::addDownloadTagFilter(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::atticaProviderLoaded(Attica::Provider const&)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::availableConfigFiles()
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::setDownloadTagFilter(QList<QString> const&)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::uploadEnabledChanged()
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::signalProvidersLoaded()
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::slotProviderFileLoaded(QDomDocument const&)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::contentWarningTypeChanged()
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::signalSearchPresetsLoaded(QList<KNSCore::Provider::SearchPreset> const&)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::signalCategoriesMetadataLoded(QList<KNSCore::Provider::CategoryMetadata> const&)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::init(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::vote(KNSCore::Entry const&, unsigned int)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::search(KNSCore::Provider::SearchRequest const&)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::becomeFan(KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::EngineBase(QObject*)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::EngineBase(QObject*)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::~EngineBase()
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::~EngineBase()
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::~EngineBase()
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::jobStarted(KJob*, QString const&)
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::loadPreview(KNSCore::Entry const&, KNSCore::Entry::PreviewType)
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::qt_metacall(QMetaObject::Call, int, void**)
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::qt_metacast(char const*)
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::removeEntry(KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::clearEntries()
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::slotEntryChanged(KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::slotEntriesLoaded(QList<KNSCore::Entry> const&)
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::slotEntryPreviewLoaded(KNSCore::Entry const&, KNSCore::Entry::PreviewType)
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::addEntry(KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::ItemsModel(KNSCore::EngineBase*, QObject*)
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::ItemsModel(KNSCore::EngineBase*, QObject*)
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::~ItemsModel()
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::~ItemsModel()
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::~ItemsModel()
-libKF6NewStuffCore.so.6:KNSCore::ImageLoader::qt_metacall(QMetaObject::Call, int, void**)
-libKF6NewStuffCore.so.6:KNSCore::ImageLoader::qt_metacast(char const*)
-libKF6NewStuffCore.so.6:KNSCore::ImageLoader::signalError(KNSCore::Entry const&, KNSCore::Entry::PreviewType, QString const&)
-libKF6NewStuffCore.so.6:KNSCore::ImageLoader::slotDownload(KJob*)
-libKF6NewStuffCore.so.6:KNSCore::ImageLoader::signalPreviewLoaded(KNSCore::Entry const&, KNSCore::Entry::PreviewType)
-libKF6NewStuffCore.so.6:KNSCore::ImageLoader::job()
-libKF6NewStuffCore.so.6:KNSCore::ImageLoader::start()
-libKF6NewStuffCore.so.6:KNSCore::ImageLoader::slotData(KJob*, QByteArray const&)
-libKF6NewStuffCore.so.6:KNSCore::ImageLoader::ImageLoader(KNSCore::Entry const&, KNSCore::Entry::PreviewType, QObject*)
-libKF6NewStuffCore.so.6:KNSCore::ImageLoader::ImageLoader(KNSCore::Entry const&, KNSCore::Entry::PreviewType, QObject*)
-libKF6NewStuffCore.so.6:KNSCore::Transaction::qt_metacall(QMetaObject::Call, int, void**)
-libKF6NewStuffCore.so.6:KNSCore::Transaction::qt_metacast(char const*)
-libKF6NewStuffCore.so.6:KNSCore::Transaction::signalMessage(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Transaction::signalErrorCode(KNSCore::ErrorCode::ErrorCode, QString const&, QVariant const&)
-libKF6NewStuffCore.so.6:KNSCore::Transaction::signalEntryEvent(KNSCore::Entry const&, KNSCore::Entry::EntryEvent)
-libKF6NewStuffCore.so.6:KNSCore::Transaction::downloadLinkLoaded(KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::Transaction::adopt(KNSCore::EngineBase*, KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::Transaction::install(KNSCore::EngineBase*, KNSCore::Entry const&, int)
-libKF6NewStuffCore.so.6:KNSCore::Transaction::finished()
-libKF6NewStuffCore.so.6:KNSCore::Transaction::uninstall(KNSCore::EngineBase*, KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::Transaction::Transaction(KNSCore::Entry const&, KNSCore::EngineBase*)
-libKF6NewStuffCore.so.6:KNSCore::Transaction::Transaction(KNSCore::Entry const&, KNSCore::EngineBase*)
-libKF6NewStuffCore.so.6:KNSCore::Transaction::~Transaction()
-libKF6NewStuffCore.so.6:KNSCore::Transaction::~Transaction()
-libKF6NewStuffCore.so.6:KNSCore::Transaction::~Transaction()
-libKF6NewStuffCore.so.6:KNSCore::Installation::readConfig(KConfigGroup const&, QString&)
-libKF6NewStuffCore.so.6:KNSCore::Installation::qt_metacall(QMetaObject::Call, int, void**)
-libKF6NewStuffCore.so.6:KNSCore::Installation::qt_metacast(char const*)
-libKF6NewStuffCore.so.6:KNSCore::Installation::archiveEntries(QString const&, KArchiveDirectory const*)
-libKF6NewStuffCore.so.6:KNSCore::Installation::downloadPayload(KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::Installation::slotPayloadResult(KJob*)
-libKF6NewStuffCore.so.6:KNSCore::Installation::signalEntryChanged(KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::Installation::signalPayloadLoaded(QUrl)
-libKF6NewStuffCore.so.6:KNSCore::Installation::signalInstallationError(QString const&, KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::Installation::signalInstallationFailed(QString const&, KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::Installation::runPostInstallationCommand(QString const&, KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::Installation::signalInstallationFinished(KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::Installation::installDownloadedFileAndUncompress(KNSCore::Entry const&, QString const&, QString)
-libKF6NewStuffCore.so.6:KNSCore::Installation::install(KNSCore::Entry, QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Installation::install(KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::Installation::uninstall(KNSCore::Entry)
-libKF6NewStuffCore.so.6:KNSCore::Installation::Installation(QObject*)
-libKF6NewStuffCore.so.6:KNSCore::Installation::Installation(QObject*)
-libKF6NewStuffCore.so.6:KNSCore::CommentsModel::qt_metacall(QMetaObject::Call, int, void**)
-libKF6NewStuffCore.so.6:KNSCore::CommentsModel::qt_metacast(char const*)
-libKF6NewStuffCore.so.6:KNSCore::CommentsModel::entryChanged()
-libKF6NewStuffCore.so.6:KNSCore::CommentsModel::setEntry(KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::CommentsModel::fetchMore(QModelIndex const&)
-libKF6NewStuffCore.so.6:KNSCore::CommentsModel::CommentsModel(KNSCore::EngineBase*)
-libKF6NewStuffCore.so.6:KNSCore::CommentsModel::CommentsModel(KNSCore::EngineBase*)
-libKF6NewStuffCore.so.6:KNSCore::CommentsModel::~CommentsModel()
-libKF6NewStuffCore.so.6:KNSCore::CommentsModel::~CommentsModel()
-libKF6NewStuffCore.so.6:KNSCore::CommentsModel::~CommentsModel()
-libKF6NewStuffCore.so.6:KNSCore::ResultsStream::qt_metacall(QMetaObject::Call, int, void**)
-libKF6NewStuffCore.so.6:KNSCore::ResultsStream::qt_metacast(char const*)
-libKF6NewStuffCore.so.6:KNSCore::ResultsStream::entriesFound(QList<KNSCore::Entry> const&)
-libKF6NewStuffCore.so.6:KNSCore::ResultsStream::fetch()
-libKF6NewStuffCore.so.6:KNSCore::ResultsStream::finish()
-libKF6NewStuffCore.so.6:KNSCore::ResultsStream::finished()
-libKF6NewStuffCore.so.6:KNSCore::ResultsStream::fetchMore()
-libKF6NewStuffCore.so.6:KNSCore::ResultsStream::ResultsStream(KNSCore::Provider::SearchRequest const&, KNSCore::EngineBase*)
-libKF6NewStuffCore.so.6:KNSCore::ResultsStream::ResultsStream(KNSCore::Provider::SearchRequest const&, KNSCore::EngineBase*)
-libKF6NewStuffCore.so.6:KNSCore::ResultsStream::~ResultsStream()
-libKF6NewStuffCore.so.6:KNSCore::ResultsStream::~ResultsStream()
-libKF6NewStuffCore.so.6:KNSCore::ResultsStream::~ResultsStream()
-libKF6NewStuffCore.so.6:KNSCore::replaceBBCode(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::ProvidersModel::qt_metacall(QMetaObject::Call, int, void**)
-libKF6NewStuffCore.so.6:KNSCore::ProvidersModel::qt_metacast(char const*)
-libKF6NewStuffCore.so.6:KNSCore::ProvidersModel::engineChanged()
-libKF6NewStuffCore.so.6:KNSCore::ProvidersModel::setEngine(QObject*)
-libKF6NewStuffCore.so.6:KNSCore::ProvidersModel::ProvidersModel(QObject*)
-libKF6NewStuffCore.so.6:KNSCore::ProvidersModel::ProvidersModel(QObject*)
-libKF6NewStuffCore.so.6:KNSCore::ProvidersModel::~ProvidersModel()
-libKF6NewStuffCore.so.6:KNSCore::ProvidersModel::~ProvidersModel()
-libKF6NewStuffCore.so.6:KNSCore::ProvidersModel::~ProvidersModel()
-libKF6NewStuffCore.so.6:KNSCore::QuestionManager::askQuestion(KNSCore::Question*)
-libKF6NewStuffCore.so.6:KNSCore::QuestionManager::qt_metacall(QMetaObject::Call, int, void**)
-libKF6NewStuffCore.so.6:KNSCore::QuestionManager::qt_metacast(char const*)
-libKF6NewStuffCore.so.6:KNSCore::QuestionManager::instance()
-libKF6NewStuffCore.so.6:KNSCore::QuestionManager::QuestionManager()
-libKF6NewStuffCore.so.6:KNSCore::QuestionManager::QuestionManager()
-libKF6NewStuffCore.so.6:KNSCore::QuestionManager::~QuestionManager()
-libKF6NewStuffCore.so.6:KNSCore::QuestionManager::~QuestionManager()
-libKF6NewStuffCore.so.6:KNSCore::QuestionManager::~QuestionManager()
-libKF6NewStuffCore.so.6:KNSCore::QuestionListener::qt_metacall(QMetaObject::Call, int, void**)
-libKF6NewStuffCore.so.6:KNSCore::QuestionListener::qt_metacast(char const*)
-libKF6NewStuffCore.so.6:KNSCore::QuestionListener::QuestionListener(QObject*)
-libKF6NewStuffCore.so.6:KNSCore::QuestionListener::QuestionListener(QObject*)
-libKF6NewStuffCore.so.6:KNSCore::QuestionListener::~QuestionListener()
-libKF6NewStuffCore.so.6:KNSCore::QuestionListener::~QuestionListener()
-libKF6NewStuffCore.so.6:KNSCore::QuestionListener::~QuestionListener()
-libKF6NewStuffCore.so.6:KNSCore::TagsFilterChecker::filterAccepts(QList<QString> const&)
-libKF6NewStuffCore.so.6:KNSCore::TagsFilterChecker::TagsFilterChecker(QList<QString> const&)
-libKF6NewStuffCore.so.6:KNSCore::TagsFilterChecker::TagsFilterChecker(QList<QString> const&)
-libKF6NewStuffCore.so.6:KNSCore::TagsFilterChecker::~TagsFilterChecker()
-libKF6NewStuffCore.so.6:KNSCore::TagsFilterChecker::~TagsFilterChecker()
-libKF6NewStuffCore.so.6:KNSCore::Cache::qt_metacall(QMetaObject::Call, int, void**)
-libKF6NewStuffCore.so.6:KNSCore::Cache::qt_metacast(char const*)
-libKF6NewStuffCore.so.6:KNSCore::Cache::entryChanged(KNSCore::Entry const&)
+libKF6NewStuffCore.so.6:KNSCore::AtticaProvider::accountBalanceLoaded(Attica::BaseJob*)
+libKF6NewStuffCore.so.6:KNSCore::AtticaProvider::becomeFanFinished(Attica::BaseJob*)
+libKF6NewStuffCore.so.6:KNSCore::AtticaProvider::downloadItemLoaded(Attica::BaseJob*)
+libKF6NewStuffCore.so.6:KNSCore::AtticaProvider::jobSuccess(Attica::BaseJob*)
+libKF6NewStuffCore.so.6:KNSCore::AtticaProvider::listOfCategoriesLoaded(Attica::BaseJob*)
+libKF6NewStuffCore.so.6:KNSCore::AtticaProvider::loadBasics()
+libKF6NewStuffCore.so.6:KNSCore::AtticaProvider::loadedComments(Attica::BaseJob*)
+libKF6NewStuffCore.so.6:KNSCore::AtticaProvider::loadedConfig(Attica::BaseJob*)
+libKF6NewStuffCore.so.6:KNSCore::AtticaProvider::loadedPerson(Attica::BaseJob*)
+libKF6NewStuffCore.so.6:KNSCore::AtticaProvider::votingFinished(Attica::BaseJob*)
+libKF6NewStuffCore.so.6:KNSCore::Author::Author()
+libKF6NewStuffCore.so.6:KNSCore::Author::~Author()
 libKF6NewStuffCore.so.6:KNSCore::Cache::readRegistry()
-libKF6NewStuffCore.so.6:KNSCore::Cache::insertRequest(KNSCore::Provider::SearchRequest const&, QList<KNSCore::Entry> const&)
-libKF6NewStuffCore.so.6:KNSCore::Cache::writeRegistry()
-libKF6NewStuffCore.so.6:KNSCore::Cache::requestFromCache(KNSCore::Provider::SearchRequest const&)
-libKF6NewStuffCore.so.6:KNSCore::Cache::registryForProvider(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Cache::registerChangedEntry(KNSCore::Entry const&)
 libKF6NewStuffCore.so.6:KNSCore::Cache::removeDeletedEntries()
-libKF6NewStuffCore.so.6:KNSCore::Cache::getCache(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Cache::Cache(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Cache::Cache(QString const&)
+libKF6NewStuffCore.so.6:KNSCore::Cache::writeRegistry()
 libKF6NewStuffCore.so.6:KNSCore::Cache::~Cache()
-libKF6NewStuffCore.so.6:KNSCore::Cache::~Cache()
-libKF6NewStuffCore.so.6:KNSCore::Cache::~Cache()
-libKF6NewStuffCore.so.6:KNSCore::Entry::setLicense(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setPayload(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setSummary(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setVersion(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setCategory(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setEntryXML(QXmlStreamReader&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setEntryXML(QDomElement const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setHomepage(QUrl const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setUniqueId(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setChangelog(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setEntryType(KNSCore::Entry::EntryType)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setNumberFans(int)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setPreviewUrl(QString const&, KNSCore::Entry::PreviewType)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setProviderId(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setReleaseDate(QDate const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setDonationLink(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setEntryDeleted()
-libKF6NewStuffCore.so.6:KNSCore::Entry::setPreviewImage(QImage const&, KNSCore::Entry::PreviewType)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setShortSummary(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setDownloadCount(int)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setUpdateVersion(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setInstalledFiles(QList<QString> const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setNumberOfComments(int)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setKnowledgebaseLink(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setUpdateReleaseDate(QDate const&)
+libKF6NewStuffCore.so.6:KNSCore::CommentsModel::CommentsModel(KNSCore::EngineBase*)
+libKF6NewStuffCore.so.6:KNSCore::CommentsModel::entryChanged()
+libKF6NewStuffCore.so.6:KNSCore::CommentsModel::~CommentsModel()
+libKF6NewStuffCore.so.6:KNSCore::EngineBase::EngineBase(QObject*)
+libKF6NewStuffCore.so.6:KNSCore::EngineBase::addProvider(QSharedPointer<KNSCore::Provider>)
+libKF6NewStuffCore.so.6:KNSCore::EngineBase::availableConfigFiles()
+libKF6NewStuffCore.so.6:KNSCore::EngineBase::categoriesMetadata()
+libKF6NewStuffCore.so.6:KNSCore::EngineBase::contentWarningTypeChanged()
+libKF6NewStuffCore.so.6:KNSCore::EngineBase::loadProviders()
+libKF6NewStuffCore.so.6:KNSCore::EngineBase::loadingProvider()
+libKF6NewStuffCore.so.6:KNSCore::EngineBase::providerInitialized(KNSCore::Provider*)
+libKF6NewStuffCore.so.6:KNSCore::EngineBase::providersChanged()
+libKF6NewStuffCore.so.6:KNSCore::EngineBase::searchPresets()
+libKF6NewStuffCore.so.6:KNSCore::EngineBase::signalProvidersLoaded()
+libKF6NewStuffCore.so.6:KNSCore::EngineBase::slotProvidersFailed()
+libKF6NewStuffCore.so.6:KNSCore::EngineBase::updateStatus()
+libKF6NewStuffCore.so.6:KNSCore::EngineBase::uploadEnabledChanged()
+libKF6NewStuffCore.so.6:KNSCore::EngineBase::useLabelChanged()
+libKF6NewStuffCore.so.6:KNSCore::EngineBase::~EngineBase()
+libKF6NewStuffCore.so.6:KNSCore::Entry::Entry()
 libKF6NewStuffCore.so.6:KNSCore::Entry::clearDownloadLinkInformation()
-libKF6NewStuffCore.so.6:KNSCore::Entry::appendDownloadLinkInformation(KNSCore::Entry::DownloadLinkInformation const&)
+libKF6NewStuffCore.so.6:KNSCore::Entry::setDownloadCount(int)
+libKF6NewStuffCore.so.6:KNSCore::Entry::setEntryDeleted()
+libKF6NewStuffCore.so.6:KNSCore::Entry::setEntryType(KNSCore::Entry::EntryType)
+libKF6NewStuffCore.so.6:KNSCore::Entry::setEntryXML(QXmlStreamReader&)
+libKF6NewStuffCore.so.6:KNSCore::Entry::setNumberFans(int)
 libKF6NewStuffCore.so.6:KNSCore::Entry::setNumberKnowledgebaseEntries(int)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setName(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setTags(QList<QString> const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::setAuthor(KNSCore::Author const&)
+libKF6NewStuffCore.so.6:KNSCore::Entry::setNumberOfComments(int)
 libKF6NewStuffCore.so.6:KNSCore::Entry::setRating(int)
 libKF6NewStuffCore.so.6:KNSCore::Entry::setSource(KNSCore::Entry::Source)
 libKF6NewStuffCore.so.6:KNSCore::Entry::setStatus(KNSCore::Entry::Status)
-libKF6NewStuffCore.so.6:KNSCore::Entry::Entry(KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::Entry()
-libKF6NewStuffCore.so.6:KNSCore::Entry::Entry(KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::Entry::Entry()
 libKF6NewStuffCore.so.6:KNSCore::Entry::~Entry()
-libKF6NewStuffCore.so.6:KNSCore::Entry::~Entry()
-libKF6NewStuffCore.so.6:KNSCore::Entry::operator=(KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::Author::setHomepage(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Author::setAvatarUrl(QUrl const&)
-libKF6NewStuffCore.so.6:KNSCore::Author::setDescription(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Author::setProfilepage(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Author::setId(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Author::setName(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Author::setEmail(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Author::setJabber(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Author::Author(KNSCore::Author const&)
-libKF6NewStuffCore.so.6:KNSCore::Author::Author()
-libKF6NewStuffCore.so.6:KNSCore::Author::Author(KNSCore::Author const&)
-libKF6NewStuffCore.so.6:KNSCore::Author::Author()
-libKF6NewStuffCore.so.6:KNSCore::Author::~Author()
-libKF6NewStuffCore.so.6:KNSCore::Author::~Author()
-libKF6NewStuffCore.so.6:KNSCore::Author::operator=(KNSCore::Author const&)
-libKF6NewStuffCore.so.6:KNSCore::Provider::setVersion(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Provider::setWebsite(QUrl const&)
-libKF6NewStuffCore.so.6:KNSCore::Provider::qt_metacall(QMetaObject::Call, int, void**)
-libKF6NewStuffCore.so.6:KNSCore::Provider::qt_metacast(char const*)
-libKF6NewStuffCore.so.6:KNSCore::Provider::signalError(QString const&)
+libKF6NewStuffCore.so.6:KNSCore::ImageLoader::job()
+libKF6NewStuffCore.so.6:KNSCore::ImageLoader::slotDownload(KJob*)
+libKF6NewStuffCore.so.6:KNSCore::ImageLoader::start()
+libKF6NewStuffCore.so.6:KNSCore::Installation::Installation(QObject*)
+libKF6NewStuffCore.so.6:KNSCore::Installation::signalPayloadLoaded(QUrl)
+libKF6NewStuffCore.so.6:KNSCore::Installation::slotPayloadResult(KJob*)
+libKF6NewStuffCore.so.6:KNSCore::Installation::uninstall(KNSCore::Entry)
+libKF6NewStuffCore.so.6:KNSCore::ItemsModel::clearEntries()
+libKF6NewStuffCore.so.6:KNSCore::ItemsModel::~ItemsModel()
+libKF6NewStuffCore.so.6:KNSCore::Provider::Provider()
 libKF6NewStuffCore.so.6:KNSCore::Provider::basicsLoaded()
 libKF6NewStuffCore.so.6:KNSCore::Provider::personLoaded(std::shared_ptr<KNSCore::Author>)
-libKF6NewStuffCore.so.6:KNSCore::Provider::setTagFilter(QList<QString> const&)
-libKF6NewStuffCore.so.6:KNSCore::Provider::loadingFailed(KNSCore::Provider::SearchRequest const&)
-libKF6NewStuffCore.so.6:KNSCore::Provider::commentsLoaded(QList<std::shared_ptr<KNSCore::Comment> >)
-libKF6NewStuffCore.so.6:KNSCore::Provider::setSupportsSsl(bool)
-libKF6NewStuffCore.so.6:KNSCore::Provider::loadingFinished(KNSCore::Provider::SearchRequest const&, QList<KNSCore::Entry> const&)
-libKF6NewStuffCore.so.6:KNSCore::Provider::setContactEmail(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Provider::signalErrorCode(KNSCore::ErrorCode::ErrorCode, QString const&, QVariant const&)
-libKF6NewStuffCore.so.6:KNSCore::Provider::payloadLinkLoaded(KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::Provider::signalInformation(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Provider::entryDetailsLoaded(KNSCore::Entry const&)
 libKF6NewStuffCore.so.6:KNSCore::Provider::providerInitialized(KNSCore::Provider*)
-libKF6NewStuffCore.so.6:KNSCore::Provider::searchPresetsLoaded(QList<KNSCore::Provider::SearchPreset> const&)
-libKF6NewStuffCore.so.6:KNSCore::Provider::setDownloadTagFilter(QList<QString> const&)
-libKF6NewStuffCore.so.6:KNSCore::Provider::categoriesMetadataLoded(QList<KNSCore::Provider::CategoryMetadata> const&)
-libKF6NewStuffCore.so.6:KNSCore::Provider::setHost(QUrl const&)
-libKF6NewStuffCore.so.6:KNSCore::Provider::setIcon(QUrl const&)
-libKF6NewStuffCore.so.6:KNSCore::Provider::setName(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Provider::Provider()
-libKF6NewStuffCore.so.6:KNSCore::Provider::Provider()
+libKF6NewStuffCore.so.6:KNSCore::Provider::setSupportsSsl(bool)
 libKF6NewStuffCore.so.6:KNSCore::Provider::~Provider()
-libKF6NewStuffCore.so.6:KNSCore::Provider::~Provider()
-libKF6NewStuffCore.so.6:KNSCore::Provider::~Provider()
-libKF6NewStuffCore.so.6:KNSCore::Question::qt_metacall(QMetaObject::Call, int, void**)
-libKF6NewStuffCore.so.6:KNSCore::Question::qt_metacast(char const*)
-libKF6NewStuffCore.so.6:KNSCore::Question::setQuestion(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Question::setResponse(KNSCore::Question::Response)
-libKF6NewStuffCore.so.6:KNSCore::Question::setResponse(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Question::setQuestionType(KNSCore::Question::QuestionType)
+libKF6NewStuffCore.so.6:KNSCore::ProvidersModel::ProvidersModel(QObject*)
+libKF6NewStuffCore.so.6:KNSCore::ProvidersModel::engineChanged()
+libKF6NewStuffCore.so.6:KNSCore::ProvidersModel::setEngine(QObject*)
+libKF6NewStuffCore.so.6:KNSCore::ProvidersModel::~ProvidersModel()
 libKF6NewStuffCore.so.6:KNSCore::Question::ask()
-libKF6NewStuffCore.so.6:KNSCore::Question::setList(QList<QString> const&)
-libKF6NewStuffCore.so.6:KNSCore::Question::setEntry(KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::Question::setTitle(QString const&)
-libKF6NewStuffCore.so.6:KNSCore::Question::Question(KNSCore::Question::QuestionType, QObject*)
-libKF6NewStuffCore.so.6:KNSCore::Question::Question(KNSCore::Question::QuestionType, QObject*)
+libKF6NewStuffCore.so.6:KNSCore::Question::setQuestionType(KNSCore::Question::QuestionType)
+libKF6NewStuffCore.so.6:KNSCore::Question::setResponse(KNSCore::Question::Response)
 libKF6NewStuffCore.so.6:KNSCore::Question::~Question()
-libKF6NewStuffCore.so.6:KNSCore::Question::~Question()
-libKF6NewStuffCore.so.6:KNSCore::Question::~Question()
-libKF6NewStuffCore.so.6:KNSCore::operator<<(QDebug, KNSCore::Entry const&)
-libKF6NewStuffCore.so.6:KNSCore::operator<<(QDebug, KNSCore::Provider::SearchRequest const&)
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::categories() const
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::metaObject() const
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::providerIDs() const
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::installation() const
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::uploadEnabled() const
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::atticaProviders() const
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::defaultProvider() const
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::downloadTagFilter() const
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::contentWarningType() const
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::hasAdoptionCommand() const
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::name() const
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::cache() const
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::provider(QString const&) const
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::useLabel() const
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::providers() const
-libKF6NewStuffCore.so.6:KNSCore::EngineBase::tagFilter() const
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::metaObject() const
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::hasPreviewImages() const
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::row(KNSCore::Entry const&) const
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::data(QModelIndex const&, int) const
-libKF6NewStuffCore.so.6:KNSCore::ItemsModel::rowCount(QModelIndex const&) const
-libKF6NewStuffCore.so.6:KNSCore::ImageLoader::metaObject() const
-libKF6NewStuffCore.so.6:KNSCore::Transaction::isFinished() const
-libKF6NewStuffCore.so.6:KNSCore::Transaction::metaObject() const
-libKF6NewStuffCore.so.6:KNSCore::Installation::metaObject() const
-libKF6NewStuffCore.so.6:KNSCore::Installation::uncompressionSetting() const
-libKF6NewStuffCore.so.6:KNSCore::Installation::targetInstallationPath() const
-libKF6NewStuffCore.so.6:KNSCore::CommentsModel::metaObject() const
-libKF6NewStuffCore.so.6:KNSCore::CommentsModel::canFetchMore(QModelIndex const&) const
-libKF6NewStuffCore.so.6:KNSCore::CommentsModel::data(QModelIndex const&, int) const
-libKF6NewStuffCore.so.6:KNSCore::CommentsModel::entry() const
-libKF6NewStuffCore.so.6:KNSCore::CommentsModel::rowCount(QModelIndex const&) const
-libKF6NewStuffCore.so.6:KNSCore::CommentsModel::roleNames() const
-libKF6NewStuffCore.so.6:KNSCore::ResultsStream::metaObject() const
-libKF6NewStuffCore.so.6:KNSCore::ProvidersModel::metaObject() const
-libKF6NewStuffCore.so.6:KNSCore::ProvidersModel::data(QModelIndex const&, int) const
-libKF6NewStuffCore.so.6:KNSCore::ProvidersModel::engine() const
-libKF6NewStuffCore.so.6:KNSCore::ProvidersModel::rowCount(QModelIndex const&) const
-libKF6NewStuffCore.so.6:KNSCore::ProvidersModel::roleNames() const
-libKF6NewStuffCore.so.6:KNSCore::QuestionManager::metaObject() const
-libKF6NewStuffCore.so.6:KNSCore::QuestionListener::metaObject() const
-libKF6NewStuffCore.so.6:KNSCore::Cache::metaObject() const
-libKF6NewStuffCore.so.6:KNSCore::Cache::entryFromInstalledFile(QString const&) const
-libKF6NewStuffCore.so.6:KNSCore::Cache::registry() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::numberFans() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::previewUrl(KNSCore::Entry::PreviewType) const
-libKF6NewStuffCore.so.6:KNSCore::Entry::providerId() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::releaseDate() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::donationLink() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::previewImage(KNSCore::Entry::PreviewType) const
-libKF6NewStuffCore.so.6:KNSCore::Entry::shortSummary() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::downloadCount() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::updateVersion() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::installedFiles() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::numberOfComments() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::uninstalledFiles() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::downloadLinkCount() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::knowledgebaseLink() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::updateReleaseDate() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::numberKnowledgebaseEntries() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::downloadLinkInformationList() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::name() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::tags() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::author() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::rating() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::source() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::status() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::isValid() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::license() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::payload() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::summary() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::version() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::category() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::entryXML() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::homepage() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::uniqueId() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::changelog() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::entryType() const
-libKF6NewStuffCore.so.6:KNSCore::Entry::operator==(KNSCore::Entry const&) const
-libKF6NewStuffCore.so.6:KNSCore::Entry::operator<(KNSCore::Entry const&) const
-libKF6NewStuffCore.so.6:KNSCore::Author::description() const
-libKF6NewStuffCore.so.6:KNSCore::Author::profilepage() const
-libKF6NewStuffCore.so.6:KNSCore::Author::id() const
-libKF6NewStuffCore.so.6:KNSCore::Author::name() const
-libKF6NewStuffCore.so.6:KNSCore::Author::email() const
-libKF6NewStuffCore.so.6:KNSCore::Author::jabber() const
-libKF6NewStuffCore.so.6:KNSCore::Author::homepage() const
-libKF6NewStuffCore.so.6:KNSCore::Author::avatarUrl() const
-libKF6NewStuffCore.so.6:KNSCore::Provider::metaObject() const
-libKF6NewStuffCore.so.6:KNSCore::Provider::supportsSsl() const
-libKF6NewStuffCore.so.6:KNSCore::Provider::contactEmail() const
-libKF6NewStuffCore.so.6:KNSCore::Provider::SearchRequest::hashForRequest() const
-libKF6NewStuffCore.so.6:KNSCore::Provider::downloadTagFilter() const
-libKF6NewStuffCore.so.6:KNSCore::Provider::host() const
-libKF6NewStuffCore.so.6:KNSCore::Provider::icon() const
-libKF6NewStuffCore.so.6:KNSCore::Provider::name() const
-libKF6NewStuffCore.so.6:KNSCore::Provider::version() const
-libKF6NewStuffCore.so.6:KNSCore::Provider::website() const
-libKF6NewStuffCore.so.6:KNSCore::Provider::tagFilter() const
-libKF6NewStuffCore.so.6:KNSCore::Question::metaObject() const
-libKF6NewStuffCore.so.6:KNSCore::Question::questionType() const
-libKF6NewStuffCore.so.6:KNSCore::Question::list() const
-libKF6NewStuffCore.so.6:KNSCore::Question::entry() const
-libKF6NewStuffCore.so.6:KNSCore::Question::title() const
-libKF6NewStuffCore.so.6:KNSCore::Question::question() const
-libKF6NewStuffCore.so.6:KNSCore::Question::response() const
-libKF6NewStuffWidgets.so.6:KNSWidgets::Action::qt_metacall(QMetaObject::Call, int, void**)
-libKF6NewStuffWidgets.so.6:KNSWidgets::Action::qt_metacast(char const*)
-libKF6NewStuffWidgets.so.6:KNSWidgets::Action::dialogFinished(QList<KNSCore::Entry> const&)
-libKF6NewStuffWidgets.so.6:KNSWidgets::Action::Action(QString const&, QString const&, QObject*)
-libKF6NewStuffWidgets.so.6:KNSWidgets::Action::Action(QString const&, QString const&, QObject*)
+libKF6NewStuffCore.so.6:KNSCore::QuestionListener::QuestionListener(QObject*)
+libKF6NewStuffCore.so.6:KNSCore::QuestionListener::~QuestionListener()
+libKF6NewStuffCore.so.6:KNSCore::QuestionManager::QuestionManager()
+libKF6NewStuffCore.so.6:KNSCore::QuestionManager::askQuestion(KNSCore::Question*)
+libKF6NewStuffCore.so.6:KNSCore::QuestionManager::instance()
+libKF6NewStuffCore.so.6:KNSCore::QuestionManager::~QuestionManager()
+libKF6NewStuffCore.so.6:KNSCore::ResultsStream::fetch()
+libKF6NewStuffCore.so.6:KNSCore::ResultsStream::fetchMore()
+libKF6NewStuffCore.so.6:KNSCore::ResultsStream::finish()
+libKF6NewStuffCore.so.6:KNSCore::ResultsStream::finished()
+libKF6NewStuffCore.so.6:KNSCore::ResultsStream::~ResultsStream()
+libKF6NewStuffCore.so.6:KNSCore::TagsFilterChecker::~TagsFilterChecker()
+libKF6NewStuffCore.so.6:KNSCore::Transaction::finished()
+libKF6NewStuffCore.so.6:KNSCore::Transaction::~Transaction()
 libKF6NewStuffWidgets.so.6:KNSWidgets::Action::~Action()
-libKF6NewStuffWidgets.so.6:KNSWidgets::Action::~Action()
-libKF6NewStuffWidgets.so.6:KNSWidgets::Action::~Action()
-libKF6NewStuffWidgets.so.6:KNSWidgets::Button::qt_metacall(QMetaObject::Call, int, void**)
-libKF6NewStuffWidgets.so.6:KNSWidgets::Button::qt_metacast(char const*)
-libKF6NewStuffWidgets.so.6:KNSWidgets::Button::setConfigFile(QString const&)
-libKF6NewStuffWidgets.so.6:KNSWidgets::Button::dialogFinished(QList<KNSCore::Entry> const&)
 libKF6NewStuffWidgets.so.6:KNSWidgets::Button::Button(QWidget*)
-libKF6NewStuffWidgets.so.6:KNSWidgets::Button::Button(QString const&, QString const&, QWidget*)
-libKF6NewStuffWidgets.so.6:KNSWidgets::Button::Button(QWidget*)
-libKF6NewStuffWidgets.so.6:KNSWidgets::Button::Button(QString const&, QString const&, QWidget*)
 libKF6NewStuffWidgets.so.6:KNSWidgets::Button::~Button()
-libKF6NewStuffWidgets.so.6:KNSWidgets::Button::~Button()
-libKF6NewStuffWidgets.so.6:KNSWidgets::Button::~Button()
-libKF6NewStuffWidgets.so.6:KNSWidgets::Dialog::qt_metacall(QMetaObject::Call, int, void**)
-libKF6NewStuffWidgets.so.6:KNSWidgets::Dialog::qt_metacast(char const*)
-libKF6NewStuffWidgets.so.6:KNSWidgets::Dialog::open()
 libKF6NewStuffWidgets.so.6:KNSWidgets::Dialog::engine()
-libKF6NewStuffWidgets.so.6:KNSWidgets::Dialog::Dialog(QString const&, QWidget*)
-libKF6NewStuffWidgets.so.6:KNSWidgets::Dialog::Dialog(QString const&, QWidget*)
+libKF6NewStuffWidgets.so.6:KNSWidgets::Dialog::open()
 libKF6NewStuffWidgets.so.6:KNSWidgets::Dialog::~Dialog()
-libKF6NewStuffWidgets.so.6:KNSWidgets::Dialog::~Dialog()
-libKF6NewStuffWidgets.so.6:KNSWidgets::Dialog::~Dialog()
-libKF6NewStuffWidgets.so.6:KNSWidgets::Action::metaObject() const
-libKF6NewStuffWidgets.so.6:KNSWidgets::Button::metaObject() const
-libKF6NewStuffWidgets.so.6:KNSWidgets::Dialog::metaObject() const
-libKF6NewStuffWidgets.so.6:KNSWidgets::Dialog::changedEntries() const
-libKF6NewStuffWidgets.so.6:non-virtual thunk to KNSWidgets::Button::~Button()
-libKF6NewStuffWidgets.so.6:non-virtual thunk to KNSWidgets::Button::~Button()
-libKF6NewStuffWidgets.so.6:non-virtual thunk to KNSWidgets::Dialog::~Dialog()
-libKF6NewStuffWidgets.so.6:non-virtual thunk to KNSWidgets::Dialog::~Dialog()

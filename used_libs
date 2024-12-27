@@ -3,6 +3,7 @@ libKF6Attica.so.6
 libKF6ConfigCore.so.6
 libKF6CoreAddons.so.6
 libKF6I18n.so.6
+libKF6I18nQml.so.6
 libKF6Package.so.6
 libKF6WidgetsAddons.so.6
 libQt6Core.so.6
